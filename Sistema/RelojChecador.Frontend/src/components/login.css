@@ -1,0 +1,192 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#021526;
+}
+
+.container{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  radial-gradient(circle at top left,#0f3460,#021526);
+}
+
+.card{
+  width:350px;
+  padding:40px;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,0.08);
+
+  border:1px solid rgba(255,255,255,0.2);
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:
+  0 0 20px rgba(0,183,255,0.3);
+
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+
+  text-align:center;
+}
+
+.icon{
+  width:100px;
+  height:100px;
+
+  border-radius:50%;
+
+  border:3px solid #3ecbff;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:40px;
+
+  margin:auto;
+
+  color:#3ecbff;
+
+  box-shadow:
+  0 0 15px #3ecbff;
+}
+
+.card h2{
+  color:white;
+  margin-bottom:10px;
+}
+
+.card input{
+  padding:14px;
+
+  border:none;
+
+  border-radius:10px;
+
+  outline:none;
+
+  background:#083358;
+
+  color:white;
+
+  font-size:12px;
+}
+
+.card input::placeholder{
+  color:#c7d7e0;
+}
+
+.btn-login{
+  padding:15px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#0077ff;
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.btn-login:hover{
+  background:#00a6ff;
+
+  box-shadow:
+  0 0 15px #00a6ff;
+}
+
+.btn-register{
+  padding:15px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:transparent;
+
+  border:1px solid #3ecbff;
+
+  color:#3ecbff;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.btn-register:hover{
+  background:#3ecbff;
+
+  color:black;
+
+  box-shadow:
+  0 0 15px #3ecbff;
+}
+
+select.input {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #083358;
+  color: white;
+  font-size: 16px;
+}
+
+select.input option {
+  background: #021526;
+  color: white;
+}
+
+
+.toast-mensaje{
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  max-width:90%;
+  background:#00a6ff;
+  color:white;
+  padding:18px 28px;
+  border-radius:18px;
+  font-weight:bold;
+  text-align:center;
+  z-index:999;
+  box-shadow:0 0 30px #00a6ff;
+}
+
+.register-card{
+  width:430px;
+  max-width:92%;
+}
+
+.card h5{
+  color:#d8f4ff;
+  font-weight:400;
+  line-height:1.35;
+}
+
+button:disabled{
+  opacity:0.5;
+  cursor:not-allowed;
+}
